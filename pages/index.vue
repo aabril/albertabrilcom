@@ -1,20 +1,20 @@
 <template>
-  <p class="content">index</p>
+  <div>
+    <TopNav/>
+    <HomeContent/>
+    <SocialNav/>
+  </div>
 </template>
 
 <script>
-// import Logo from '~components/Logo.vue'
+import HomeContent from '~/components/HomeContent.vue'
+import TopNav from '~/components/TopNav.vue'
+import SocialNav from '~/components/SocialNav.vue'
 
 export default {
-  components: {
-    // Logo
-  }
+  components: { HomeContent, TopNav, SocialNav },
+  props: [ ],
+  layout: 'default' // you can set a custom layout for the error page
 }
 </script>
 
-<style>
-.content {
-  border: 1px solid black;
-  height: 60px;
-}
-</style>
