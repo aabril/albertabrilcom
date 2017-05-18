@@ -1,11 +1,11 @@
 <template>
-  <Home/>
+  <root/>
 </template>
 
 <script>
-import Home from '~/pages/home.vue'
+import Root from '~/pages/root.vue'
 export default {
-  components: { Home }
+  components: { Root }
 }
 </script>
 

@@ -1,5 +1,7 @@
 <template>
-  <img class="brand-logo" src="~static/logo.png"></img>
+  <div class="Logo">
+    <img src="~static/logo.png"></img>
+  </div>
 </template>
 
 <script>
@@ -9,11 +11,11 @@ export default {
 }
 </script>
 
-<style>
-.brand-logo {
-  position: absolute; 
-  top: 30px;
-  left: 30px;
-  max-width: 140px;
+<style lang="less">
+.Logo {
+  img {
+    max-width: 140px;
+    margin: 30px;
+  }
 }
 </style>

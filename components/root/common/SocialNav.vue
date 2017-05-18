@@ -1,5 +1,5 @@
 <template>
-	<div class="social-nav social-footer">
+	<div class="SocialNav social-footer">
 		<ul>
 			<li>
 				<a href="https://www.linkedin.com/in/albertabril" target="_blank">
@@ -35,12 +35,16 @@ export default {
 @color_1: #757A86;
 @color_2: #6534ff;
 
-.social-nav {
-	position: relative;
-	z-index: 100;
+.SocialNav {
 	display: inline-block;
-	margin-top: 30px;
+	position: fixed;
+	bottom: 32px;
+	left: 36px;
+	z-index: 100;
 	opacity: 1;
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -99,12 +103,5 @@ export default {
 			}
 		}
 	}
-}
-.social-nav.social-footer {
-	position: absolute;
-	bottom: 32px;
-	left: 36px;
-	-webkit-transition: all 0.6s ease;
-	transition: all 0.6s ease;
 }
 </style>
