@@ -1,11 +1,18 @@
 <template>
-  <p class="content">TopNav</p>
+  <div>
+    <Logo/>
+    <MenuButton/>
+  </div>
 </template>
 
 <script>
+import Logo from '~/components/home/TopNav/Logo.vue'
+import MenuButton from '~/components/home/TopNav/MenuButton.vue'
+
 export default {
   props: [ ],
-  layout: 'default' // you can set a custom layout for the error page
+  layout: 'default', // you can set a custom layout for the error page
+  components: { Logo, MenuButton }
 }
 </script>
 
