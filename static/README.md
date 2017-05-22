@@ -1,5 +1,7 @@
 # STATIC
 
+Files here won't be included in webpack and served as static files
+
 This directory contains your static files.
 Each file inside this directory is mapped to /.
 
