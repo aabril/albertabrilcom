@@ -6,5 +6,5 @@
 [*] - Build and run by default with 'npm start'
 [*] - Get assets included on 'nuxt build' // including assets on head
 
-[ ] - Run nuxt with express for API (check nuxt/express)
+[*] - Run nuxt with express for API (check nuxt/express)
 [ ] - When importing threejs the webpack dist file is too big, fix it
