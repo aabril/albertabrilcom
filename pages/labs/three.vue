@@ -11,24 +11,11 @@
 </template>
 
 <script>
-
-import WebGLRenderer from '../../components/three/WebGLRenderer'
-import PerspectiveCamera from '../../components/three/PerspectiveCamera'
-import Scene from '../../components/three/Scene'
-import BoxGeometry from '../../components/three/BoxGeometry'
-import Mesh from '../../components/three/Mesh'
-import MeshBasicMaterial from '../../components/three/MeshBasicMaterial'
+import Three from '../../components/three'
 import { Color, Vector3 } from 'three'
 
 export default {
-  components: {
-    WebglRenderer: WebGLRenderer,
-    PerspectiveCamera,
-    Scene,
-    BoxGeometry,
-    MeshBasicMaterial,
-    Mesh
-  },
+  components: Three,
   data () {
     return {
       width: 0,
