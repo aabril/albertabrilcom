@@ -5,7 +5,8 @@
   "author": "Albert Abril <albert.abril@gmail.com>",
   "private": true,
   "dependencies": {
-    "nuxt": "latest"
+    "nuxt": "latest",
+    "three": "^0.85.2"
   },
   "scripts": {
     "dev": "nuxt",
