@@ -1,5 +1,6 @@
 <template>
 	<div class="SocialNav social-footer">
+    
 		<ul>
 			<li>
 				<a href="https://www.linkedin.com/in/albertabril" target="_blank">
@@ -25,13 +26,16 @@
 <script>
 export default {
   props: [ ],
-  layout: 'default' // you can set a custom layout for the error page
+  layout: 'default',
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
+    ]
+  }
 }
 </script>
 
 <style lang="less">
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
 @color_1: #757A86;
 @color_2: #6534ff;
 

@@ -5,11 +5,14 @@
 </template>
 
 <script>
-// import TWEEN from 'https://unpkg.com/tween.js@16.3.4'
-
 export default {
   props: [ ],
   layout: 'default',
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' }
+    ]
+  },
   data () {
     return {
       'isActive': false
@@ -24,8 +27,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';
-
 .MenuNav {
   position: absolute;
   top: 30px;
