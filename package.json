@@ -4,6 +4,9 @@
   "description": "Nuxt.js project",
   "author": "Albert Abril <albert.abril@gmail.com>",
   "private": true,
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "engines": {
     "node": "6.10.0",
     "npm": "3.10.10"
