@@ -13,7 +13,7 @@ app.set('port', port)
 app.use('/api', api)
 
 // Start nuxt.js
-async function start() {
+async function start () {
   // Import and Set Nuxt.js options
   let config = require('../nuxt.config.js')
   config.dev = !(process.env.NODE_ENV === 'production')
@@ -26,8 +26,8 @@ async function start() {
     try {
       await nuxt.build()
     } catch (e) {
-      console.error(error) // eslint-disable-line no-console
-     process.exit(1)
+      console.error(e) // eslint-disable-line no-console
+      process.exit(1)
     }
   }
   // Listen the server
@@ -36,4 +36,3 @@ async function start() {
 }
 
 start()
-
