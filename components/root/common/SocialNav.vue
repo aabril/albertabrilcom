@@ -1,6 +1,6 @@
 <template>
 	<div class="SocialNav social-footer">
-    
+
 		<ul>
 			<li>
 				<a href="https://www.linkedin.com/in/albertabril" target="_blank">
@@ -8,16 +8,24 @@
         </a>
 			</li>
 			<li>
-				<a href="https://twitter.com/desmondo" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a href="https://twitter.com/desmondo" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
 			</li>
 			<li>
-				<a href="http://github.com/aabril" target="_blank"><i class="fa fa-github"></i></a>
+				<a href="http://github.com/aabril" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
 			</li>
 			<li>
-				<a href="https://plus.google.com/u/0/+AlbertAbrilCerd%C3%A0" target="_blank"><i class="fa fa-google-plus"></i></a>
+				<a href="https://plus.google.com/u/0/+AlbertAbrilCerd%C3%A0" target="_blank">
+          <i class="fa fa-google-plus"></i>
+        </a>
 			</li>
 			<li>
-				<a href="mailto:albert.abril@gmail.com" target="_blank"><i class="fa fa-at"></i></a>
+				<a href="mailto:albert.abril@gmail.com" target="_blank">
+          <i class="fa fa-at"></i>
+        </a>
 			</li>
 		</ul>
 	</div>
@@ -29,13 +37,16 @@ export default {
   layout: 'default',
   head: {
     link: [
-      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
+      { rel: 'stylesheet', href: '~assets/fonts/font-awesome.min.css' }
     ]
   }
 }
 </script>
 
 <style lang="less">
+
+@import '~assets/fonts/font-awesome.min.css';
+
 @color_1: #757A86;
 @color_2: #6534ff;
 
@@ -99,7 +110,7 @@ export default {
 						transform: rotate(135deg);
 					}
 				}
-				i {
+				icon {
 					position: relative;
 					top: 0;
 					left: 0;
