@@ -3,11 +3,13 @@
     <div v-if="!ready">
       <Loading/>
     </div>
-    <div v-if="ready">
-      <MenuNav/>
-      <HomeContent/>
-      <SocialNav/>
-    </div>
+    <transition name="fade">
+      <div v-if="ready">
+        <MenuNav/>
+        <HomeContent/>
+        <SocialNav/>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -32,3 +34,12 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 2.4s
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+}
+</style>
