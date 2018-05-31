@@ -12,3 +12,6 @@ dist
 
 # Backpack build
 build
+
+yarn-error.log
+yarn.lock

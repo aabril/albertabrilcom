@@ -7,10 +7,6 @@
   "optionalDependencies": {
     "fsevents": "*"
   },
-  "engines": {
-    "node": "6.10.0",
-    "npm": "3.10.10"
-  },
   "scripts": {
     "dev": "backpack dev",
     "build": "nuxt build && backpack build",
